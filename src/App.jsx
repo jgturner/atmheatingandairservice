@@ -319,7 +319,7 @@ function App() {
             <p>If you need service use schedule an appointment, if you need assistance after hours or RIGHT NOW use immediate/urgent service.</p> */}
 
             <div className="h-100">
-              <form netlify>
+              <form method="POST" data-netlify="true">
                 <label htmlFor="" className="form-label">
                   <strong> Name:</strong>
                 </label>
