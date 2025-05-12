@@ -137,7 +137,7 @@ function App() {
               <p className="handwritten mb-0">We've seen it!</p>
               <p>
                 We specialize in repairs. Our goal is to keep your unit running as long as possible through preventive maintenance, efficient troubleshooting and even
-                replacing hard to find parts. We to extend the use of existencing units and try to avoid costly replacements.
+                replacing hard to find parts. We like to extend the use of existencing units and try to avoid costly replacements.
               </p>
             </div>
           </div>
@@ -319,10 +319,7 @@ function App() {
             <p>If you need service use schedule an appointment, if you need assistance after hours or RIGHT NOW use immediate/urgent service.</p> */}
 
             <div className="h-100">
-              <form
-                action="
-        "
-              >
+              <form netlify>
                 <label htmlFor="" className="form-label">
                   <strong> Name:</strong>
                 </label>
