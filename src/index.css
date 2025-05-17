@@ -96,6 +96,11 @@ h6 {
   color: #2954c7;
 }
 
+.text-right {
+  text-align: right;
+  padding-right: 20px;
+}
+
 .hint {
   font-size: 1rem;
 }

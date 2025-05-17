@@ -84,11 +84,11 @@ function App() {
               <a href="#appointments" className="btn btn-info text-white ">
                 Schedule an Appointment
               </a>
-              {isOutsideBusinessHours && (
+              {/* {isOutsideBusinessHours && (
                 <a href="https://buy.stripe.com/test_6oE00L05P4aJ29aaEE" target="_blank" className="btn btn-danger ">
                   24/7 Urgent Repairs
                 </a>
-              )}
+              )} */}
               <a href="#contact" className="btn btn-outline-info mb-3">
                 Contact Us
               </a>
@@ -119,9 +119,8 @@ function App() {
                 top-notch service to our customers in Onslow, Jacksonville, and surrounding areas. 24/7 service is available for emergencies, and we take pride in serving
                 our community.
               </p>
-
-              <div className="d-flex justify-content-md-end justify-content-between align-items-center">
-                <p className="handwritten">If you need us we'll be there!</p>
+              <p className="handwritten text-right">Call us, we'll be there!</p>
+              <div className="d-flex justify-content-end align-items-center">
                 <img src="./truck.png" alt="matt" className="d-flex justify-end" width={250} />
               </div>
             </div>
@@ -189,16 +188,18 @@ function App() {
                   </div>
                   <div className="d-flex justify-content-center gap-5 border-box">
                     <div>
-                      <p className="custom-font review-label">
-                        <i className="fa-brands fa-square-facebook"></i> 100% Recommended (9 Reviews)
+                      <p className="custom-font review-label text-center">
+                        <i className="fa-brands fa-square-facebook"></i> 100% Recommended
+                        <br /> (9 Reviews)
                       </p>
                       <a target="_blank" href="https://www.facebook.com/profile.php?id=100057365443392&sk=reviews" className="text-center d-block ">
                         <FaSquareFacebook /> Facebook Reviews
                       </a>
                     </div>
                     <div>
-                      <p className="custom-font review-label">
-                        <i className="fa-brands fa-google"></i> 5.0 (125 Reviews)
+                      <p className="custom-font review-label text-center">
+                        <i className="fa-brands fa-google"></i> 5.0
+                        <br /> (125 Reviews)
                       </p>
                       <a
                         target="_blank"
@@ -279,7 +280,7 @@ function App() {
                       <strong>Monday - Friday:</strong> 9:00 AM - 5:00 PM
                     </li>
                     <li>
-                      <strong>After Hours:</strong>
+                      <strong>After Hours: </strong> 24/7 Urgent Repairs
                     </li>
                   </ul>
                 </div>
@@ -323,22 +324,22 @@ function App() {
                 <label htmlFor="" className="form-label">
                   <strong> Name:</strong>
                 </label>
-                <input className="form-control" type="text" />
+                <input className="form-control" type="text" name="customer-name" />
 
                 <label htmlFor="" className="form-label">
                   <strong>Email:</strong>
                 </label>
-                <input className="form-control" type="email" />
+                <input className="form-control" type="email" name="customer-email" />
 
                 <label htmlFor="" className="form-label">
                   <strong>Phone Number:</strong>
                 </label>
-                <input className="form-control" type="tel" />
+                <input className="form-control" type="tel" name="customer-contact-number" />
 
                 <label htmlFor="" className="form-label">
                   <strong>How can we help?</strong>
                 </label>
-                <textarea className="form-control mb-3" name="" id="" cols="30" rows="10"></textarea>
+                <textarea className="form-control mb-3" id="" cols="30" rows="10" name="customer-issue"></textarea>
                 <button className="btn btn-info text-white" type="submit">
                   Submit
                 </button>
