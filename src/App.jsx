@@ -12,10 +12,10 @@ import { AiFillGoogleSquare } from 'react-icons/ai';
 function App() {
   // Get current hour in 24-hour format
   // const currentHour = new Date().getHours();
-  const currentHour = 6;
+  // const currentHour = 6;
 
   // Business hours: 9 AM (9) to 5 PM (17)
-  const isOutsideBusinessHours = currentHour < 9 || currentHour >= 17;
+  // const isOutsideBusinessHours = currentHour < 9 || currentHour >= 17;
 
   return (
     <div className="container mx-auto pb-5">
